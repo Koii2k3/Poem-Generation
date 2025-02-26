@@ -30,7 +30,7 @@ prompt_input = st.text_area("Enter a few words or sentences to start:",
                           value="Con song que toi dep\n",
                           height=100)
 
-col1, empty_col, col2 = st.columns([0.5, 0.5, 1.0])
+col1, empty_col, col2 = st.columns([0.7, 0.3, 1.0])
 with col1:
     max_length = st.slider("Max Output Tokens:", 10, 200, 75)
     temperature = st.slider("Temperature:", 0.1, 1.5, 0.8)
